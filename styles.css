@@ -1,0 +1,175 @@
+*{
+    box-sizing: border-box;
+}
+body {
+    max-width: 1024px ;
+    margin: 40px auto;
+    padding: 0 30px;
+    background-color: rgb(255, 93, 93);
+    background: url("images/more-leaves-on-green.png")
+}
+
+.banner {
+    display: table;
+    width: 100%;
+    background-color: rgb(255, 46, 46);
+    color: floralwhite;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande';
+    font-size: 50px;
+    padding: 40px 30px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    background-image: linear-gradient(to right, rgb(255, 46, 46), rgb(255, 93, 93))
+}
+.logo {
+    display: table-cell;
+    text-shadow: 4px 4px 3px black;
+    letter-spacing: 3px;
+}
+.logo img {
+    width: 170px;
+    vertical-align: middle;
+    filter: drop-shadow(4px 4px 5px black)
+}
+.sosyal {
+    display: table-cells;
+    text-align: right;
+    vertical-align: top;
+}
+.sosyal img {
+    width: 100px;
+    filter: drop-shadow(3px 3px 5px black)
+}
+.menu {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.menu ul {
+    overflow: hidden;
+    list-style-type: none;
+    background-color:rgb(211, 61, 1);
+    margin: 0;
+    padding: 0;
+}
+.menu li {
+    float: left;    
+}
+.menu li a {
+display: block;
+text-decoration: none;
+background-color:rgb(211, 61, 1);
+padding: 12px 20px ;
+color:white;
+transition: background-color 0.3s ease-in-out;  
+}
+.menu a:hover {
+    background-color:rgb(255, 0, 0);
+}
+.main{
+    background-color: #ff7474b8;
+}
+.main h2{
+    margin: 10px 20px;
+    color: rgb(97, 7, 7);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    border-bottom: rgb(97, 7, 7) 1px solid;
+    letter-spacing: 3px;
+    text-shadow: 1px 1px 2px red;
+}
+
+.main p {
+    margin: 20px;
+    text-align: justify;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5;
+    padding-bottom: 20px;
+}
+
+.main p::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.main .resimsol {
+    width: 33%;
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 6px;
+    border: 1px darkred solid;
+}
+
+.main .resimsag {
+    width: 33%;
+    float: right;
+    margin-left: 20px;
+    margin-bottom: 6px;
+    border: 1px darkred solid;
+}
+
+.main .galeri{
+    display: flex;
+    margin: 10px;
+}
+
+.main .galeri > * {
+    flex-basis: 100%;
+}
+
+.main .galeri img{
+    width: 100%;
+
+}
+.main .galeri .sutun{
+    padding: 7px;
+    background-color: #c93a3a;
+    margin: 10px;
+    box-shadow: 1px 1px 3px black;
+    text-align:center;
+}
+.main .galeri .sutun span {
+    display: inline-block;
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-herif;
+}
+
+#asResim {
+    width: 100%;
+    padding: 10px;
+    border-radius: 15px;
+    filter: drop-shadow(0 0 5px black)
+}
+.footer {
+    background-color: rgb(255, 32, 32);
+    text-align: center;
+    color: white;
+    padding: 15px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    background-image: linear-gradient(to right, rgb(255, 46, 46), rgb(255, 93, 93))
+}
+.aktifsayfa {
+    font-weight: bold;
+    text-shadow: 2px 2px 3px darkred;
+}
+
+
+@media screen and (max-width: 800px) {
+    .logo img {
+        width: 130px;
+    }
+    .sosyal img {
+        width: 30px;
+    }
+    .banner {
+        font-size: 30px;
+    }
+    .main .resimSolda {
+        width: 100%;
+    }
+    .main .resimSagda {
+        width: 100%;
+    }
+    .main .galeri {
+        display: block;
+    }
+}
